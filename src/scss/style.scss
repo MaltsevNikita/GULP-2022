@@ -68,7 +68,7 @@ body {
   font-size: 16px;
   font-family: "CenturyGothic";
 }
-
+//header============================
 .header {
   background-image: url("/../images/header-rectangle.png");
   padding-top: 300px;
@@ -123,7 +123,7 @@ body {
   letter-spacing: 0em;
   text-align: left;
 }
-
+//mainMenu===================
 .mainMenu-list__item--last {
   padding-right: 0;
   text-transform: uppercase;
@@ -186,6 +186,38 @@ body {
   font-weight: 700;
 }
 
+.hero {
+  width: 100%;
+  font-family: CenturyGothic;
+  background: radial-gradient(
+    53.88% 97% at 50% 48.5%,
+    #2e4151 0%,
+    #010007 100%
+  );
+
+  &__mainTitle {
+    padding-top: 57px;
+    padding-bottom: 46px;
+    padding-left: 45px;
+    max-width: 920px;
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+  }
+  &__description {
+    border-left: 16px solid rgba(255, 255, 255, 0.3);
+    padding-left: 45px;
+
+    max-width: 868px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+  }
+}
+.text-block {
+  padding-bottom: 115.76px;
+}
+
 .body__experience-title {
   padding-top: 46px;
 }
@@ -218,13 +250,12 @@ body {
 .experience-card__card-description {
   max-width: 200px;
 }
-
+//mission============================
 .mission {
   background-image: url("../images/MissionCover-1.jpg");
   padding-left: 45px;
   padding-bottom: 168px;
 }
-
 .mission__title {
   padding-top: 46px;
   padding-bottom: 30px;
@@ -253,7 +284,7 @@ body {
 .description-block__text:last-child {
   padding-bottom: 0;
 }
-
+//technology=========================
 .technology {
   padding-left: 45px;
   background: radial-gradient(
@@ -292,11 +323,10 @@ body {
   padding-bottom: 30px;
   padding-left: 35px;
 }
-
 .technology-notes__note:last-child {
   padding-bottom: 30px;
 }
-
+//catalogue=========================
 .catalogue-section {
   padding-top: 54px;
   &-title {
@@ -319,7 +349,6 @@ body {
     max-width: 460px;
   }
 }
-
 .fuel-section {
   padding-top: 48px;
   padding-bottom: 15px;
@@ -367,13 +396,12 @@ td {
   padding: 10px 8px;
   text-align: left;
 }
-
+//footer=================
 .footer__footer-block {
   background-color: #000;
   padding-top: 10px;
   padding-bottom: 50px;
 }
-
 .footer-list {
   padding-top: 10px;
   display: flex;
