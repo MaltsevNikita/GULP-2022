@@ -78,15 +78,16 @@ body {
 }
 
 .header__brandElement {
+  padding: absolute;
   z-index: 2;
   margin: 0;
   padding-left: 10%;
 }
 
 .header__logoImg {
-  padding-top: 50px;
-  padding-left: 40%;
-  padding-bottom: 169px;
+  position: absolute;
+  left: 34.5%;
+  top: 18%;
 }
 
 .header__info-section {
@@ -104,6 +105,13 @@ body {
   width: 100%;
   top: 163px;
   left: 0px;
+  font-family: PartnerUltraCondensed;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .mainMenu-list {
@@ -111,13 +119,13 @@ body {
   justify-content: space-around;
   background-color: #fff;
   color: #010007;
-  padding: 24px 36px;
+  padding: 29px 15px;
 }
 
 .mainMenu-list__item {
   text-transform: uppercase;
   padding-right: 30px;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
   line-height: 24px;
   letter-spacing: 0em;
@@ -196,11 +204,12 @@ body {
   );
 
   &__mainTitle {
-    padding-top: 57px;
+    padding-top: 90px;
     padding-bottom: 46px;
-    padding-left: 45px;
+    padding-left: 10px;
     max-width: 920px;
     font-size: 48px;
+    line-height: 58, 85px;
     font-weight: 700;
     color: #fff;
   }
@@ -396,7 +405,9 @@ td {
   padding: 10px 8px;
   text-align: left;
 }
-//footer=================
+
+//===========internal-tabs============
+//===========internal-tabs-end============
 .footer__footer-block {
   background-color: #000;
   padding-top: 10px;
@@ -405,10 +416,33 @@ td {
 .footer-list {
   padding-top: 10px;
   display: flex;
+  justify-content: space-evenly;
   padding-left: 35px;
 }
-
-.footer-list__item {
+.footer-list__item,
+.footer-list-item {
   color: #fff;
+  max-width: 160px;
+  &__title {
+    font-weight: 700;
+    padding-bottom: 11px;
+  }
+  &__description {
+    font-size: 12px;
+  }
+  &__link {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+.footer-list-item {
+  &-link {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=style.css.map */
