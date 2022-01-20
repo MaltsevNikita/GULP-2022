@@ -406,6 +406,17 @@ td {
   text-align: left;
 }
 
+// ===========tabs============
+.tabs {
+  &__body {
+  }
+  &__block {
+    display: none;
+  }
+}
+.tabs__block:target {
+  display: block;
+}
 //===========internal-tabs============
 //===========internal-tabs-end============
 .footer__footer-block {
