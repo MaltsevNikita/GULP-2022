@@ -417,6 +417,8 @@ td {
   display: block;
 }
 //// ===========tabs-end============
+
+//===========partner-tabs============
 .patner-tabs {
 }
 .patner-tabs__body {
@@ -433,7 +435,6 @@ td {
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  // line-height: 24px;
   letter-spacing: 0em;
   text-align: center;
   color: #000;
@@ -449,9 +450,127 @@ td {
   }
 }
 
-.partner-tabs-list__link 
+.patner-tabs-block {
+  padding-top: 50px;
+  &__header {
+    max-width: 920px;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 59px;
+    text-align: left;
+    padding-bottom: 30px;
+  }
+  &__description {
+    border-left: 16px solid rgba(0, 0, 0, 0.3);
+    padding-left: 35px;
+  }
+}
+.advantages-list {
+  padding-top: 50px;
+  padding-bottom: 85px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 18px;
+  &__item {
+    max-width: 255px;
+  }
+  &__item-img {
+    padding-bottom: 15px;
+  }
+}
 
-//===========partner-tabs============
+.twoSteps-block {
+  background: radial-gradient(
+    53.88% 97% at 50% 48.5%,
+    #2e4151 0%,
+    #010007 100%
+  );
+  padding-top: 46px;
+  padding-bottom: 71px;
+  color: #fff;
+  &__title {
+    max-width: 920px;
+    font-family: Century Gothic;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
+.twoSteps {
+  padding-top: 53px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: left;
+  &__item {
+    display: flex;
+  }
+  &__description {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    max-width: 315px;
+    padding: 0px 20px;
+  }
+}
+// ===========application-block==============
+.application-block {
+  font-family: Century Gothic;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  max-width: 920px;
+  background-color: #fff;
+  color: #000;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 55px 136px 0px 76px;
+  &__title {
+    font-family: PartnerUltraCondensed;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  &__description {
+    max-width: 709px;
+    font-family: CenturyGothic;
+    font-size: 18px;
+    padding-bottom: 51px;
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  &__form-input {
+    font-size: 24px;
+    padding-bottom: 14px;
+    margin-bottom: 34px;
+    border-bottom: 2px solid #bebebe;
+  }
+}
+.order-call-btn {
+  padding-left: 80%;
+  background-color: #fff;
+}
+.bottom-line {
+  padding-bottom: 51px;
+  transform: translateY(-15px);
+  transform: translateX(-75px);
+}
+// ===========//application-block==============
 
 //===========partner-tabs-end============
 .footer__footer-block {
