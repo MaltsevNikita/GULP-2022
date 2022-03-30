@@ -88,7 +88,7 @@ body {
 .header__logoImg {
   position: absolute;
   left: 34.5%;
-  top: 18%;
+  top: 5%;
 }
 
 .header__info-section {
@@ -416,11 +416,18 @@ td {
 .tabs__block:target {
   display: block;
 }
-//// ===========tabs-end============
+//===========tabs-end============
 
 //===========partner-tabs============
 .patner-tabs {
+  &__block {
+    display: none;
+  }
+  &__block:target {
+    display: block;
+  }
 }
+
 .patner-tabs__body {
   // border-bottom: 1px solid #000000;
 
@@ -449,23 +456,14 @@ td {
     border-bottom: 6px solid #000000;
   }
 }
-
-.patner-tabs-block {
+.partner-tabs__body {
   padding-top: 50px;
-  &__header {
-    max-width: 920px;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 59px;
-    text-align: left;
-    padding-bottom: 30px;
-  }
-  &__description {
-    border-left: 16px solid rgba(0, 0, 0, 0.3);
-    padding-left: 35px;
+  display: none;
+  &--active {
+    display: block;
   }
 }
+
 .advantages-list {
   padding-top: 50px;
   padding-bottom: 85px;
