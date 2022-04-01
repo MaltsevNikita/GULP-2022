@@ -447,7 +447,7 @@ td {
   color: #000;
 }
 
-.partner-tabs-list__link {
+.partner-tabs-list__item {
   color: #000;
   &--active {
     padding: 0;
@@ -457,10 +457,27 @@ td {
   }
 }
 .partner-tabs__body {
+  padding-left: 45px;
   padding-top: 50px;
   display: none;
   &--active {
     display: block;
+  }
+}
+// .partner-tabs-body=========================
+.partner-tabs-body{
+  &__title{
+    padding-bottom: 30px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  &__description{
+    border-left: 16px solid rgba(5, 3, 3, 0.3);
+    padding-left: 35px;
+    margin-bottom: 65px;
   }
 }
 
