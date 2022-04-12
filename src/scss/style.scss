@@ -610,6 +610,31 @@ td {
   transform: translateY(-15px);
   transform: translateX(-75px);
 }
+.serviceBlock{
+  display: flex;
+  justify-content: center;
+  &__leftSide{
+    padding-right: 158px;
+  }
+  &__rightSide{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  &-rightSide-image{
+    padding-bottom: 12px;
+  }
+
+}
+.image-subtitle{
+  //styleName: Подпись иконки;
+  font-family: Century Gothic;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
 // ===========//application-block==============
 
 //===========partner-tabs-end============
