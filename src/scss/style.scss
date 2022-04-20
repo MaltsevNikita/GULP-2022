@@ -742,6 +742,113 @@ td {
   }
 }
 
+.contacts{
+  background-image: url("/../images/header-rectangle.png");
+  background-size:cover;
+  padding-top: 300px;
+  margin: 0;
+  padding: 0;
+  font-family: "CenturyGothic";
+  color: #fff;
+  &__title{
+    font-family: Century Gothic;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 24px;
+  }
+  &__description{
+    font-family: Century Gothic;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    border-left: 16px solid rgba(255, 255, 255, 0.3);
+    padding-left: 35px;
+    margin-bottom: 87px;
+  }
+  &__official{
+    text-transform: uppercase;
+    max-width: 508px;
+    font-family: PartnerUltraCondensed;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 87px;
+  }
+.twoSides{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 116px;
+}
+
+.rightSide{
+  font-family: Century Gothic;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  &__manufacturer{
+    padding-bottom: 24px;
+    text-transform: uppercase;
+    font-family: Century Gothic;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  &__company,&__address,&__e-mail,&__phone{
+    color:#fff;
+    display: block;
+    padding-top: 10px;
+    font-family: Century Gothic;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+}
+
+.official-distributor{
+  border-left: 16px solid rgba(255, 255, 255, 0.3);
+  padding-left: 35px;
+  max-width: 38%;
+  &__title{
+    font-family: Century Gothic;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 9px;
+  }
+  &__link{
+    display: block;
+    text-decoration: none;
+    color:#fff;
+    margin-bottom: 19px;
+    
+  }
+  &__table{
+    color:#000;
+    flex-direction: column;
+    
+  }
+  &__table-link{
+    color:#000
+  }
+
+}
+
+
 .footer__footer-block {
   background-color: #000;
   padding-top: 10px;
@@ -780,3 +887,4 @@ td {
   }
 }
 /*# sourceMappingURL=style.css.map */
+  }
