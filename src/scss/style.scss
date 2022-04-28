@@ -68,6 +68,7 @@ body {
   font-size: 16px;
   font-family: "CenturyGothic";
   box-sizing: border-box;
+  margin: 0 auto;
 }
 //header============================
 .header {
@@ -121,6 +122,10 @@ body {
   background-color: #fff;
   color: #010007;
   padding: 29px 15px;
+  &__link{
+    transform: translateY(-20px);
+    cursor: pointer;
+  }
 }
 
 .mainMenu-list__item {
@@ -176,6 +181,7 @@ body {
 .container {
   padding-left: 45px;
   padding-right: 45px;
+  margin: 0 auto;
 }
 
 .description-block__text--first,
@@ -229,6 +235,7 @@ body {
 }
 
 .body__experience-title {
+
   padding-top: 46px;
 }
 
@@ -788,6 +795,7 @@ td {
   display: flex;
   justify-content: space-between;
   padding-bottom: 116px;
+  width: 10%;
 }
 
 
@@ -842,6 +850,7 @@ td {
     
   }
   &__table{
+    // background-color: rgba(#000000, 0.5);
     color:#000;
     flex-direction: column;
     
@@ -890,4 +899,13 @@ td {
     text-align: left;
   }
 }
+
+// .modal-window{
+//   display: none;
+//   &__btn-closeModal{
+//     position: absolute;
+//     top:0;
+//     left: 0;
+//   }
+// }
 /*# sourceMappingURL=style.css.map */
