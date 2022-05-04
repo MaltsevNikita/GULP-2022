@@ -19,13 +19,8 @@
         <li class="mainMenu-list__item"> <a class="mainMenu-list__link" 
           href="#tab_07">Контакты</a></li>
         <li class="mainMenu-list__item">
-          <button><img class="mainMenu-list__link" src="/../images/order-call.png" alt="order call"></button>
-          <!-- <div class="modal-window">
-            <div class="modal-window__btn-closeModal">X</div>
-            <div class="modal-window__modal-content">
-              <p>Контент модального окна</p>
-            </div>
-        </div> -->
+          <!-- ==============Кнопка открытия popup============================== -->
+            <img id="popupOpen" class="mainMenu-list__link" src="/../images/order-call.png" alt="order call">
         </li>
       </ul>
     </div>
@@ -33,7 +28,6 @@
       <img class="bottom-line" src="..images/bottom-line-white.png" alt="bottom-line-white">
     </div> -->
 </header>
-
 <div class="body">
   <!-- ===========tabs======================== -->
   <div class="tabs">
@@ -1227,5 +1221,24 @@
 
     </div>
   </div>
+
+  <div class="popup">
+    <div class="popup__wrapper">
+      <div class="popup__window">
+        <div class="popup__close">X</div>
+        <div class="popup__title">Заказать звонок</div>
+        <div class="popup__content">
+          Оставьте свои контактные данные, мы свяжемся с вами в ближайшее время
+        </div>
+        <form class="form" action="#">
+          <input class="form__form-input" type="text" name="#" placeholder="Имя" id="">
+          <input class="form__form-input" type="text" name="#" placeholder="Телефон" id="">
+          <button class="order-call-btn" type="submit">оставить заявку</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
 
 </div>

@@ -32,3 +32,4 @@ partnerTabs.addEventListener('click', e => {
   }
   
 })
+// =============popup====добавить проект от WAYUP по модальному окну=====================
