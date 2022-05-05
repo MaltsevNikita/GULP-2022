@@ -902,8 +902,14 @@ td {
 }
 // ======================popup=================
 .popup{
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  &.--active{
+    opacity: 1;
+    visibility: visible;
+  }
   &__wrapper {
-    // display: none;
     color: #000;
     position: fixed;
     width: 100%;
@@ -913,12 +919,13 @@ td {
     left: 0;
   }
   &__window{
+    // border: 1px solid red;
     position: absolute;
     top:25%;
     left: 25%;
     width: 60%;
-    background-color:#fff
-  }
+    background-color:#fff;
+    }
   &__title{
     text-transform: uppercase;
     padding: 30px 30px 6px 20px;
@@ -948,5 +955,4 @@ td {
     cursor: pointer;
   }
 }
-
 /*# sourceMappingURL=style.css.map */

@@ -25,11 +25,26 @@ partnerTabs.addEventListener('click', e => {
   changeClass(e.target);
   for(let i = 0; i < partnerTabsContent.length; i++){
     partnerTabsContent[i].classList.remove('--active');
-    console.log(partnerTabsContent[i].dataset.content);
+    // console.log(partnerTabsContent[i].dataset.content);
     if(partnerTabsContent[i].dataset.content == currTab){
       partnerTabsContent[i].classList.add('--active')
     }
   }
   
 })
-// =============popup====добавить проект от WAYUP по модальному окну=====================
+
+const btnOpen = document.getElementById('popupOpen');
+const modal = document.getElementById('popup');
+const overlay = document.getElementById('popup__wrapper');
+const btnClose = document.getElementById('popup__close');
+
+btnOpen.addEventListener('click',() =>{
+    modal.classList.add('--active');
+});
+
+overlay.addEventListener('click', () => {
+  modal.classList.remove('--active');
+});
+btnClose.addEventListener('click', () => {
+  modal.classList.remove('--active');
+});
