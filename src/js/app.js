@@ -32,15 +32,23 @@ partnerTabs.addEventListener('click', e => {
   }
   
 })
-
+// ==========для футера================
 const btnOpen = document.getElementById('popupOpen');
+const footer_btnOpen = document.getElementById('footer_popupOpen');
+// ==========/для футера================
 const modal = document.getElementById('popup');
+// const footer_modal = document.getElementById('popup');
 const overlay = document.getElementById('popup__wrapper');
 const btnClose = document.getElementById('popup__close');
 
 btnOpen.addEventListener('click',() =>{
     modal.classList.add('--active');
 });
+footer_btnOpen.addEventListener('click',() =>{
+    modal.classList.add('--active');
+});
+
+
 
 overlay.addEventListener('click', () => {
   modal.classList.remove('--active');
