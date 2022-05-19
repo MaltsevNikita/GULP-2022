@@ -902,7 +902,7 @@ td {
 }
 // ======================popup=================
 .popup{
-  position: relative;
+  position: absolute;
   opacity: 0;
   visibility: hidden;
   &.--active{
@@ -920,10 +920,10 @@ td {
   }
   &__window{
     // border: 1px solid red;
-    position: absolute;
-    top:25%;
-    left: 25%;
-    width: 60%;
+    position: fixed;
+    top: 30px;
+    left:25%;
+    width: 60vw;
     background-color:#fff;
     }
   &__title{
