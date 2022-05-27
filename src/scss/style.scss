@@ -72,7 +72,7 @@ body {
 }
 //header============================
 .header {
-  background-image: url("/../images/header-rectangle.png");
+  background-image: url("../images/header-rectangle.png");
   padding-top: 300px;
   margin: 0;
   padding: 0;
@@ -104,6 +104,7 @@ body {
 
 .header__mainMenu {
   position: absolute;
+  z-index: 2;
   width: 100%;
   top: 163px;
   left: 0px;
@@ -379,7 +380,7 @@ body {
     padding-bottom: 15px;
   }
   &-top__title {
-    padding-right: 180px;
+    padding-right: 37%;
     transform: translateY(15px);
     font-size: 32px;
     font-weight: 400;
@@ -394,8 +395,9 @@ body {
 table {
   font-family: CenturyGothic;
   font-size: 14px;
+  font-weight: 400;
   line-height: 17px;
-  width: 540px;
+  width: 36%;
   padding-bottom: 89px;
 }
 table,
@@ -620,12 +622,9 @@ td {
   transform: translateY(-15px);
   transform: translateX(-75px);
 }
-.serviceBlock{
+.partner-serviceBlock{
   display: flex;
   justify-content: center;
-  &__leftSide{
-    padding-right: 158px;
-  }
   &__rightSide{
     display: flex;
     justify-content: space-evenly;
@@ -633,18 +632,21 @@ td {
   }
   &-rightSide-image{
     padding-bottom: 12px;
+    width: 50%;
+  }
+  &__image-subtitle {
+    //styleName: Подпись иконки;
+    font-family: Century Gothic;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    max-width: 207px;
   }
 
 }
-.image-subtitle{
-  //styleName: Подпись иконки;
-  font-family: Century Gothic;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: left;
-}
+
 // ===========//application-block=========
 
 // ======================shop-points=========
@@ -752,11 +754,11 @@ td {
 }
 
 .contacts{
-  background-image: url("/../images/header-rectangle.png");
+  background-image: url("../images/header-rectangle.png");
   background-size:cover;
   padding-top: 300px;
   margin: 0;
-  padding: 0;
+  padding: 100px;
   font-family: "CenturyGothic";
   color: #fff;
   &__title{
@@ -954,5 +956,81 @@ td {
     text-decoration: none;
     cursor: pointer;
   }
+}
+@media(max-width: 768px){
+  .header{
+    &__brandElement{
+      width: 64%;
+      transform: translateX(25%);
+    }
+  }
+  .mainMenu-list{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    transform: translateY(-55%);
+    
+    
+    &__item{
+      text-align: center;
+      // padding-bottom: 10px;
+      font-size: 14px;
+      &:last-child{
+        padding-top: 20px;
+      }
+    }
+  }
+  .tabs__block{
+    margin-top: 180px;
+  }
+  .service-ico{
+    max-width: 200px;
+  }
+  .twoSteps-block{
+    &__steps {
+        margin: 5%;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    &__step{
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+    &__StepImage{
+      max-height: 72px;
+    }
+    &__stepDescription{
+      font-size: 14px;
+    }
+  }
+  .logo-section{
+    &-top__title{
+      font-size: 24px;
+    }
+    &-top__img{
+      display: none;
+    }
+    &-table-td{
+      max-width: 214px;
+      word-wrap: break-word;
+      font-size: 14px;
+    }
+  }
+  .partner-tabs{
+    padding-top: 150px;
+  }
+  
+  .serviceBlock{
+    &-leftSide-image {
+      padding-right: 0;
+      margin-right: 0;
+      width: 80%;
+      height: 80%;
+    }
+  }
+  
+    
 }
 /*# sourceMappingURL=style.css.map */
