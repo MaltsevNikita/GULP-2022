@@ -63,8 +63,8 @@ h6 {
 
 html,
 body {
-  height: 100%;
-  line-height: 1;
+  // height: 100%;
+  // line-height: 1;
   font-size: 16px;
   font-family: "CenturyGothic";
   box-sizing: border-box;
@@ -108,7 +108,7 @@ body {
   width: 100%;
   top: 163px;
   left: 0px;
-  font-family: CenturyGothic;
+  font-family: partnerultracondensed;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -438,8 +438,6 @@ td {
 }
 
 .patner-tabs__body {
-  // border-bottom: 1px solid #000000;
-
   max-width: 90%;
   margin: 0 auto;
 }
@@ -907,6 +905,7 @@ td {
   position: absolute;
   opacity: 0;
   visibility: hidden;
+  z-index: 4;
   &.--active{
     opacity: 1;
     visibility: visible;
@@ -965,24 +964,30 @@ td {
     }
   }
   .mainMenu-list{
+    font-family: partnerultracondensed;
     display: flex;
     justify-content: space-evenly;
     padding: 0;
+    padding-left: 39px;
     margin: 0;
     transform: translateY(-55%);
-    
-    
     &__item{
       text-align: center;
-      // padding-bottom: 10px;
+      padding-top: 11px;
+      padding-bottom: 9px;
       font-size: 14px;
+      word-spacing: 2px;
       &:last-child{
         padding-top: 20px;
       }
     }
   }
+  .footer-mainMenu-list{
+    transform: translateY(10px);
+    cursor: pointer;
+  }
   .tabs__block{
-    margin-top: 180px;
+    // margin-top: 180px;
   }
   .service-ico{
     max-width: 200px;
@@ -1030,6 +1035,7 @@ td {
       height: 80%;
     }
   }
+
   
     
 }
